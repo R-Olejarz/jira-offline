@@ -1,0 +1,60 @@
+﻿<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="using:ToDoListApp.Models"
+    x:Class="ToDoListApp.Views.ConfirmDeleteWindow"
+    x:DataType="models:TodoItem"
+    Width="420"
+    Height="200"
+    CanResize="False"
+    ShowInTaskbar="False"
+    WindowStartupLocation="CenterOwner"
+    Title="Delete task"
+    Background="{DynamicResource AppBackgroundBrush}">
+
+    <Grid Margin="22" RowDefinitions="Auto,*,Auto" RowSpacing="14">
+
+        <TextBlock
+            Text="Are you sure you want to delete this task?"
+            FontSize="18"
+            FontWeight="SemiBold"
+            Foreground="{DynamicResource BodyTextBrush}" />
+
+        <StackPanel Grid.Row="1" Spacing="6">
+
+            <TextBlock
+                Text="{Binding Title}"
+                FontSize="15"
+                FontWeight="SemiBold"
+                Foreground="{DynamicResource BodyTextBrush}"
+                TextWrapping="Wrap" />
+
+            <TextBlock
+                Text="This action cannot be undone."
+                Foreground="{DynamicResource MutedTextBrush}" />
+
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            Orientation="Horizontal"
+            HorizontalAlignment="Right"
+            Spacing="10">
+
+            <Button
+                Content="No"
+                Classes="compact"
+                IsCancel="True"
+                Click="No_Click" />
+
+            <Button
+                Content="Yes, delete"
+                Classes="compact danger"
+                IsDefault="True"
+                Click="Yes_Click" />
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>

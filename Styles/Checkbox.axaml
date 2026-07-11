@@ -1,0 +1,82 @@
+﻿<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="CheckBox.task-check">
+        <Setter Property="Width" Value="24" />
+        <Setter Property="Height" Value="24" />
+        <Setter Property="MinWidth" Value="24" />
+        <Setter Property="MinHeight" Value="24" />
+        <Setter Property="Padding" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border
+                    x:Name="PART_Box"
+                    Width="24"
+                    Height="24"
+                    CornerRadius="999"
+                    Background="Transparent"
+                    BorderBrush="{DynamicResource TaskCheckBorderBrush}"
+                    BorderThickness="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    RenderTransformOrigin="50%,50%"
+                    RenderTransform="scale(1)">
+
+                    <Border.Transitions>
+                        <Transitions>
+                            <BrushTransition Property="Background" Duration="0:0:0.12" />
+                            <BrushTransition Property="BorderBrush" Duration="0:0:0.12" />
+                            <TransformOperationsTransition Property="RenderTransform" Duration="0:0:0.08" />
+                        </Transitions>
+                    </Border.Transitions>
+
+                    <TextBlock
+                        x:Name="PART_CheckGlyph"
+                        Text="✓"
+                        FontSize="16"
+                        FontWeight="Bold"
+                        Foreground="{DynamicResource TaskCheckGlyphBrush}"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Opacity="0">
+
+                        <TextBlock.Transitions>
+                            <Transitions>
+                                <DoubleTransition Property="Opacity" Duration="0:0:0.08" />
+                            </Transitions>
+                        </TextBlock.Transitions>
+
+                    </TextBlock>
+
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+
+    <Style Selector="CheckBox.task-check:pointerover /template/ Border#PART_Box">
+        <Setter Property="BorderBrush" Value="{DynamicResource TaskCheckHoverBorderBrush}" />
+    </Style>
+
+    <Style Selector="CheckBox.task-check:pressed /template/ Border#PART_Box">
+        <Setter Property="RenderTransform" Value="scale(0.94)" />
+    </Style>
+
+    <Style Selector="CheckBox.task-check:checked /template/ Border#PART_Box">
+        <Setter Property="Background" Value="{DynamicResource TaskCheckCheckedBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource TaskCheckCheckedBrush}" />
+    </Style>
+
+    <Style Selector="CheckBox.task-check:checked:pointerover /template/ Border#PART_Box">
+        <Setter Property="Background" Value="{DynamicResource TaskCheckCheckedHoverBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource TaskCheckCheckedHoverBrush}" />
+    </Style>
+
+    <Style Selector="CheckBox.task-check:checked /template/ TextBlock#PART_CheckGlyph">
+        <Setter Property="Opacity" Value="1" />
+    </Style>
+
+</Styles>

@@ -1,0 +1,138 @@
+﻿<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="TextBox">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource InputBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource InputTextBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource InputBorderBrush}" />
+
+        <Setter Property="BorderThickness" Value="1.5" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="Padding" Value="10,8" />
+        <Setter Property="MinHeight" Value="36" />
+    </Style>
+
+    <Style Selector="TextBox:pointerover /template/ Border#PART_BorderElement">
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource InputBorderHoverBrush}" />
+        <Setter
+            Property="Background"
+            Value="{DynamicResource InputBackgroundHoverBrush}" />
+    </Style>
+
+    <Style Selector="TextBox:focus /template/ Border#PART_BorderElement">
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource InputBorderBrush}" />
+
+        <Setter
+            Property="Background"
+            Value="{DynamicResource InputFocusBackgroundBrush}" />
+    </Style>
+    
+    <Style Selector="ComboBox.priority-select:dropdownopen /template/ Border#Background">
+        <Setter Property="Background" Value="{DynamicResource InputFocusBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderHoverBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select:dropdownopen /template/ Border#PopupBorder">
+        <Setter Property="Background" Value="{DynamicResource SelectPopupBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SelectPopupBorderBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="BoxShadow" Value="0 8 20 0 #70000000" />
+    </Style>
+
+    <Style Selector="ComboBoxItem">
+        <Setter Property="Foreground" Value="{DynamicResource BodyTextBrush}" />
+        <Setter Property="Padding" Value="10,7" />
+        <Setter Property="MinHeight" Value="32" />
+    </Style>
+
+    <Style Selector="ComboBoxItem /template/ ContentPresenter">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="CornerRadius" Value="4" />
+        <Setter Property="TextBlock.Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBoxItem:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource SelectItemHoverBrush}" />
+        <Setter Property="TextBlock.Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBoxItem:selected /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource SelectItemSelectedBrush}" />
+        <Setter Property="TextBlock.Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBoxItem:selected:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource SelectItemPressedBrush}" />
+        <Setter Property="TextBlock.Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+    
+    <Style Selector="ComboBox.priority-select">
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource InputTextBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="CornerRadius" Value="5" />
+        <Setter Property="Padding" Value="10,0,0,0" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select /template/ Border#Background">
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderBrush}" />
+        <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select /template/ ContentControl#ContentPresenter">
+        <Setter Property="Foreground" Value="{DynamicResource InputTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select /template/ PathIcon#DropDownGlyph">
+        <Setter Property="Foreground" Value="{DynamicResource MutedTextBrush}" />
+    </Style>
+    
+    <Style Selector="ComboBox.priority-select:pointerover /template/ Border#Background">
+        <Setter Property="Background" Value="{DynamicResource InputBackgroundHoverBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderHoverBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select:pointerover /template/ PathIcon#DropDownGlyph">
+        <Setter Property="Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select:pressed /template/ Border#Background">
+        <Setter Property="Background" Value="{DynamicResource InputFocusBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderHoverBrush}" />
+    </Style>
+    
+    <Style Selector="ComboBox.priority-select:focus-visible /template/ Border#HighlightBackground">
+        <Setter Property="IsVisible" Value="True" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="{DynamicResource InputBorderHoverBrush}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="CornerRadius" Value="5" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select:focus-visible /template/ ContentControl#ContentPresenter">
+        <Setter Property="Foreground" Value="{DynamicResource InputTextBrush}" />
+    </Style>
+
+    <Style Selector="ComboBox.priority-select:focus-visible /template/ PathIcon#DropDownGlyph">
+        <Setter Property="Foreground" Value="{DynamicResource BodyTextBrush}" />
+    </Style>
+</Styles>

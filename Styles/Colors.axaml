@@ -1,0 +1,231 @@
+﻿<ResourceDictionary
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ====================================================== -->
+    <!-- Application -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="AppBackgroundColor">#171B22</Color>
+
+    <SolidColorBrush
+        x:Key="AppBackgroundBrush"
+        Color="{StaticResource AppBackgroundColor}" />
+
+
+    <!-- ====================================================== -->
+    <!-- Text -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="BodyTextColor">#F4F7FB</Color>
+    <Color x:Key="MutedTextColor">#AAB4C2</Color>
+    <Color x:Key="HoverTextColor">#FFFFFF</Color>
+
+    <SolidColorBrush
+        x:Key="BodyTextBrush"
+        Color="{StaticResource BodyTextColor}" />
+
+    <SolidColorBrush
+        x:Key="MutedTextBrush"
+        Color="{StaticResource MutedTextColor}" />
+
+    <SolidColorBrush
+        x:Key="HoverTextBrush"
+        Color="{StaticResource HoverTextColor}" />
+
+
+    <!-- ====================================================== -->
+    <!-- Input fields -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="InputBackgroundColor">#131820</Color>
+    <Color x:Key="InputBackgroundHoverColor">#0C1119</Color>
+    <Color x:Key="InputBorderColor">#38414D</Color>
+    <Color x:Key="InputBorderHoverColor">#4A5665</Color>
+    <Color x:Key="InputTextColor">#F4F7FB</Color>
+    <Color x:Key="InputPlaceholderColor">#7E8998</Color>
+    <Color x:Key="InputFocusBackgroundColor">#171D26</Color>
+    
+    <SolidColorBrush
+        x:Key="InputBackgroundBrush"
+        Color="{StaticResource InputBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="InputBackgroundHoverBrush"
+        Color="{StaticResource InputBackgroundHoverColor}" />
+    
+    <SolidColorBrush
+        x:Key="InputBorderBrush"
+        Color="{StaticResource InputBorderColor}" />
+
+    <SolidColorBrush
+        x:Key="InputBorderHoverBrush"
+        Color="{StaticResource InputBorderHoverColor}" />
+
+    <SolidColorBrush
+        x:Key="InputTextBrush"
+        Color="{StaticResource InputTextColor}" />
+
+    <SolidColorBrush
+        x:Key="InputPlaceholderBrush"
+        Color="{StaticResource InputPlaceholderColor}" />
+    
+    <SolidColorBrush
+        x:Key="InputFocusBackgroundBrush"
+        Color="{StaticResource InputFocusBackgroundColor}" />
+    
+    <!-- ====================================================== -->
+    <!-- Icon buttons -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="IconButtonBackgroundColor">#1D232C</Color>
+    <Color x:Key="IconButtonHoverBackgroundColor">#343E4B</Color>
+    <Color x:Key="IconButtonBorderColor">#38414D</Color>
+    <Color x:Key="IconButtonHoverBorderColor">#5B6878</Color>
+    <Color x:Key="IconButtonForegroundColor">#F4F7FB</Color>
+
+    <SolidColorBrush
+        x:Key="IconButtonBackgroundBrush"
+        Color="{StaticResource IconButtonBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="IconButtonHoverBackgroundBrush"
+        Color="{StaticResource IconButtonHoverBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="IconButtonBorderBrush"
+        Color="{StaticResource IconButtonBorderColor}" />
+
+    <SolidColorBrush
+        x:Key="IconButtonHoverBorderBrush"
+        Color="{StaticResource IconButtonHoverBorderColor}" />
+
+    <SolidColorBrush
+        x:Key="IconButtonForegroundBrush"
+        Color="{StaticResource IconButtonForegroundColor}" />
+
+
+    <!-- ====================================================== -->
+    <!-- Primary button -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="PrimaryButtonBackgroundColor">#2563EB</Color>
+    <Color x:Key="PrimaryButtonHoverBackgroundColor">#1D4ED8</Color>
+    <Color x:Key="PrimaryButtonPressedBackgroundColor">#1E40AF</Color>
+    <Color x:Key="PrimaryButtonForegroundColor">#FFFFFF</Color>
+
+    <SolidColorBrush
+        x:Key="PrimaryButtonBackgroundBrush"
+        Color="{StaticResource PrimaryButtonBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="PrimaryButtonHoverBackgroundBrush"
+        Color="{StaticResource PrimaryButtonHoverBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="PrimaryButtonPressedBackgroundBrush"
+        Color="{StaticResource PrimaryButtonPressedBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="PrimaryButtonForegroundBrush"
+        Color="{StaticResource PrimaryButtonForegroundColor}" />
+
+
+    <!-- ====================================================== -->
+    <!-- Task card -->
+    <!-- ====================================================== -->
+
+    <Color x:Key="TaskCardBackgroundColor">#1D232C</Color>
+    <Color x:Key="TaskCardHoverBackgroundColor">#242C37</Color>
+    <Color x:Key="TaskCardBorderColor">#343D49</Color>
+    <Color x:Key="TaskCardHoverBorderColor">#485567</Color>
+
+    <SolidColorBrush
+        x:Key="TaskCardBackgroundBrush"
+        Color="{StaticResource TaskCardBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="TaskCardHoverBackgroundBrush"
+        Color="{StaticResource TaskCardHoverBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="TaskCardBorderBrush"
+        Color="{StaticResource TaskCardBorderColor}" />
+
+    <SolidColorBrush
+        x:Key="TaskCardHoverBorderBrush"
+        Color="{StaticResource TaskCardHoverBorderColor}" />
+    
+    <!-- Priority -->
+
+    <Color x:Key="PriorityLowColor">#22C55E</Color>
+    <Color x:Key="PriorityMediumColor">#FBBF24</Color>
+    <Color x:Key="PriorityHighColor">#EF4444</Color>
+
+    <SolidColorBrush
+        x:Key="PriorityLowBrush"
+        Color="{StaticResource PriorityLowColor}" />
+
+    <SolidColorBrush
+        x:Key="PriorityMediumBrush"
+        Color="{StaticResource PriorityMediumColor}" />
+
+    <SolidColorBrush
+        x:Key="PriorityHighBrush"
+        Color="{StaticResource PriorityHighColor}" />
+    
+    <!-- Task checkbox -->
+
+    <Color x:Key="TaskCheckBorderColor">#C8D0DA</Color>
+    <Color x:Key="TaskCheckHoverBorderColor">#F4F7FB</Color>
+    <Color x:Key="TaskCheckCheckedColor">#36A636</Color>
+    <Color x:Key="TaskCheckCheckedHoverColor">#2F9630</Color>
+    <Color x:Key="TaskCheckGlyphColor">#FFFFFF</Color>
+
+    <SolidColorBrush x:Key="TaskCheckBorderBrush" Color="{StaticResource TaskCheckBorderColor}" />
+    <SolidColorBrush x:Key="TaskCheckHoverBorderBrush" Color="{StaticResource TaskCheckHoverBorderColor}" />
+    <SolidColorBrush x:Key="TaskCheckCheckedBrush" Color="{StaticResource TaskCheckCheckedColor}" />
+    <SolidColorBrush x:Key="TaskCheckCheckedHoverBrush" Color="{StaticResource TaskCheckCheckedHoverColor}" />
+    <SolidColorBrush x:Key="TaskCheckGlyphBrush" Color="{StaticResource TaskCheckGlyphColor}" />
+    
+    <!-- Done task -->
+
+    <Color x:Key="TaskDoneBackgroundColor">#1A2420</Color>
+    <Color x:Key="TaskDoneBorderColor">#2F5E40</Color>
+    <Color x:Key="TaskDoneAccentColor">#36A636</Color>
+    <Color x:Key="TaskDoneHoverBackgroundColor">#1D2A24</Color>
+    <Color x:Key="TaskDoneHoverBorderColor">#417852</Color>
+
+    <SolidColorBrush x:Key="TaskDoneBackgroundBrush" Color="{StaticResource TaskDoneBackgroundColor}" />
+    <SolidColorBrush x:Key="TaskDoneBorderBrush" Color="{StaticResource TaskDoneBorderColor}" />
+    <SolidColorBrush x:Key="TaskDoneAccentBrush" Color="{StaticResource TaskDoneAccentColor}" />
+    <SolidColorBrush x:Key="TaskDoneHoverBackgroundBrush" Color="{StaticResource TaskDoneHoverBackgroundColor}" />
+    <SolidColorBrush x:Key="TaskDoneHoverBorderBrush" Color="{StaticResource TaskDoneHoverBorderColor}" />
+    
+    <!-- ComboBox -->
+    <Color x:Key="SelectPopupBackgroundColor">#171D26</Color>
+    <Color x:Key="SelectPopupBorderColor">#38414D</Color>
+    <Color x:Key="SelectItemHoverColor">#252D38</Color>
+    <Color x:Key="SelectItemSelectedColor">#2C3645</Color>
+    <Color x:Key="SelectItemPressedColor">#343F50</Color>
+
+    <SolidColorBrush
+        x:Key="SelectPopupBackgroundBrush"
+        Color="{StaticResource SelectPopupBackgroundColor}" />
+
+    <SolidColorBrush
+        x:Key="SelectPopupBorderBrush"
+        Color="{StaticResource SelectPopupBorderColor}" />
+
+    <SolidColorBrush
+        x:Key="SelectItemHoverBrush"
+        Color="{StaticResource SelectItemHoverColor}" />
+
+    <SolidColorBrush
+        x:Key="SelectItemSelectedBrush"
+        Color="{StaticResource SelectItemSelectedColor}" />
+
+    <SolidColorBrush
+        x:Key="SelectItemPressedBrush"
+        Color="{StaticResource SelectItemPressedColor}" />
+</ResourceDictionary>

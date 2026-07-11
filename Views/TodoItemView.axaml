@@ -1,0 +1,159 @@
+﻿<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:models="using:ToDoListApp.Models"
+    xmlns:vm="using:ToDoListApp.ViewModels"
+    x:Class="ToDoListApp.Views.TodoItemView"
+    x:DataType="models:TodoItem">
+
+    <UserControl.Styles>
+        <Style Selector="Border.drop-indicator">
+            <Setter
+                Property="Background"
+                Value="{DynamicResource PrimaryButtonBackgroundBrush}" />
+
+            <Setter Property="Opacity" Value="0" />
+
+            <Setter
+                Property="BoxShadow"
+                Value="0 0 8 1 #802563EB" />
+
+            <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition
+                        Property="Opacity"
+                        Duration="0:0:0.10" />
+                </Transitions>
+            </Setter>
+        </Style>
+
+        <Style Selector="Border.drop-indicator.active">
+            <Setter Property="Opacity" Value="1" />
+        </Style>
+
+    </UserControl.Styles>
+    
+
+    <Grid>
+       <Border
+            x:Name="RootCard"
+            Classes="todo-card"
+            Classes.done="{Binding IsDone}"
+            Margin="8,3"
+            Padding="8,10"
+            CornerRadius="10"
+            RenderTransformOrigin="50%,50%"
+            DoubleTapped="RootCard_DoubleTapped">
+                   
+    <Grid ColumnDefinitions="4,*" ColumnSpacing="8">
+        <Border
+            Grid.Column="0"
+            Background="{DynamicResource TaskCheckCheckedBrush}"
+            CornerRadius="999"
+            VerticalAlignment="Stretch"
+            IsVisible="{Binding IsDone}" />
+        
+        <Grid
+            Grid.Column="1"
+            ColumnDefinitions="Auto,*,120,82,38"
+            ColumnSpacing="15">
+
+            <CheckBox
+                Grid.Column="0"
+                Classes="task-check"
+                VerticalAlignment="Center"
+                IsChecked="{Binding IsDone}" />
+
+            <TextBlock
+                Grid.Column="1"
+                Text="{Binding Title}"
+                Classes="title"
+                Classes.done="{Binding IsDone}"
+                Foreground="{DynamicResource BodyTextBrush}"
+                TextTrimming="CharacterEllipsis"
+                VerticalAlignment="Center">
+
+                <TextBlock.Styles>
+                    <Style Selector="TextBlock.done">
+                        <Setter Property="TextDecorations" Value="Strikethrough" />
+                        <Setter Property="Opacity" Value="0.55" />
+                    </Style>
+                </TextBlock.Styles>
+
+            </TextBlock>
+
+            <Border
+                Grid.Column="2"
+                Padding="0,4"
+                CornerRadius="6"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Stretch">
+
+                <Grid ColumnDefinitions="64,*" ColumnSpacing="8">
+
+                    <TextBlock
+                        Grid.Column="0"
+                        Classes="priority-flags"
+                        Classes.low="{Binding IsLowPriority}"
+                        Classes.medium="{Binding IsMediumPriority}"
+                        Classes.high="{Binding IsHighPriority}"
+                        Text="{Binding PriorityFlags}"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        TextAlignment="Left" />
+
+                    <TextBlock
+                        Grid.Column="1"
+                        Text="{Binding Priority}"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Left"
+                        Foreground="{DynamicResource BodyTextBrush}" />
+
+                </Grid>
+
+            </Border>
+
+            <Button
+                Grid.Column="3"
+                Margin="12,0,0,0"
+                Classes="compact"
+                Content="More"
+                Click="ShowDetails_Click" />
+
+            <Button
+                Grid.Column="4"
+                FontFamily="{StaticResource FontAwesome}"
+                Content=""
+                ToolTip.Tip="Remove"
+                Classes="icon"
+                Click="Delete_Click" />
+
+        </Grid>
+
+    </Grid>
+
+</Border>
+        
+        <Border
+            x:Name="DropBeforeIndicator"
+            Classes="drop-indicator"
+            ZIndex="10"
+            Height="3"
+            Margin="20,1,20,0"
+            CornerRadius="2"
+            VerticalAlignment="Top"
+            IsHitTestVisible="False" />
+        
+        <Border
+            x:Name="DropAfterIndicator"
+            Classes="drop-indicator"
+            ZIndex="10"
+            Height="3"
+            Margin="20,0,20,1"
+            CornerRadius="2"
+            VerticalAlignment="Bottom"
+            IsHitTestVisible="False" />
+
+    </Grid>
+
+</UserControl>

@@ -1,0 +1,184 @@
+﻿<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="Border.todo-card">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource TaskCardBackgroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource TaskCardBorderBrush}" />
+
+        <Setter
+            Property="BorderThickness"
+            Value="1" />
+    </Style>
+
+    <Style Selector="Border.todo-card:pointerover">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource TaskCardHoverBackgroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource TaskCardHoverBorderBrush}" />
+    </Style>
+
+      <Style Selector="Border.todo-card">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource TaskCardBackgroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource TaskCardBorderBrush}" />
+
+        <Setter Property="BorderThickness" Value="1" />
+
+        <Setter
+            Property="BoxShadow"
+            Value="0 0 0 0 #00000000" />
+
+        <Setter
+            Property="RenderTransform"
+            Value="scale(1)" />
+
+        <Setter Property="Opacity" Value="1" />
+
+        <Setter Property="Transitions">
+            <Transitions>
+                <BrushTransition
+                    Property="Background"
+                    Duration="0:0:0.12" />
+
+                <BrushTransition
+                    Property="BorderBrush"
+                    Duration="0:0:0.12" />
+
+                <ThicknessTransition
+                    Property="BorderThickness"
+                    Duration="0:0:0.12" />
+
+                <DoubleTransition
+                    Property="Opacity"
+                    Duration="0:0:0.12" />
+
+                <BoxShadowsTransition
+                    Property="BoxShadow"
+                    Duration="0:0:0.15" />
+
+                <TransformOperationsTransition
+                    Property="RenderTransform"
+                    Duration="0:0:0.12" />
+            </Transitions>
+        </Setter>
+    </Style>
+    
+    <Style Selector="Border.todo-card:pointerover">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource TaskCardHoverBackgroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource TaskCardHoverBorderBrush}" />
+
+        <Setter
+            Property="BoxShadow"
+            Value="0 5 14 0 #40000000" />
+
+        <Setter
+            Property="RenderTransform"
+            Value="scale(1.008)" />
+    </Style>
+    
+    <Style Selector="Border.todo-card.dragging">
+        <Setter Property="Opacity" Value="0.72" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource PrimaryButtonBackgroundBrush}" />
+
+        <Setter
+            Property="BoxShadow"
+            Value="0 12 28 0 #70000000" />
+
+        <Setter
+            Property="RenderTransform"
+            Value="scale(1.018)" />
+    </Style>
+    
+    <Style Selector="Border.todo-card.drop-target">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource TaskCardHoverBackgroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource PrimaryButtonBackgroundBrush}" />
+
+        <Setter Property="BorderThickness" Value="2" />
+
+        <Setter
+            Property="BoxShadow"
+            Value="0 0 0 3 #302563EB" />
+
+        <Setter
+            Property="RenderTransform"
+            Value="scale(1.01)" />
+    </Style>
+    
+    <Style Selector="Border.drop-indicator">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource PrimaryButtonBackgroundBrush}" />
+
+        <Setter Property="Opacity" Value="0" />
+
+        <Setter
+            Property="BoxShadow"
+            Value="0 0 8 1 #802563EB" />
+
+        <Setter Property="Transitions">
+            <Transitions>
+                <DoubleTransition
+                    Property="Opacity"
+                    Duration="0:0:0.10" />
+            </Transitions>
+        </Setter>
+    </Style>
+
+    <Style Selector="Border.drop-indicator.active">
+        <Setter Property="Opacity" Value="1" />
+    </Style>
+    
+    <Style Selector="Border.todo-card.done">
+        <Setter Property="Background" Value="{DynamicResource TaskDoneBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource TaskDoneBorderBrush}" />
+    </Style>
+
+    <Style Selector="Border.todo-card.done:pointerover">
+        <Setter Property="Background" Value="{DynamicResource TaskDoneHoverBackgroundBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource TaskDoneHoverBorderBrush}" />
+    </Style>
+
+    <Style Selector="Border.done-accent">
+        <Setter Property="Background" Value="{DynamicResource TaskDoneAccentBrush}" />
+        <Setter Property="Opacity" Value="1" />
+        <Setter Property="BoxShadow" Value="0 0 10 0 #5036A636" />
+    </Style>
+
+    <Style Selector="TextBlock.priority-text.done">
+        <Setter Property="Opacity" Value="0.75" />
+    </Style>
+
+    <Style Selector="Button.compact.done">
+        <Setter Property="Opacity" Value="0.78" />
+    </Style>
+
+    <Style Selector="Button.icon.done">
+        <Setter Property="Opacity" Value="0.78" />
+    </Style>
+</Styles>

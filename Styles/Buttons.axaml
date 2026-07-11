@@ -1,0 +1,161 @@
+﻿<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="Button">
+        <Setter Property="Padding" Value="14,8" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="MinHeight" Value="36" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+    </Style>
+
+    <!-- Primary button -->
+
+    <Style Selector="Button.primary">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource PrimaryButtonBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource PrimaryButtonForegroundBrush}" />
+
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style Selector="Button.primary:pointerover /template/ ContentPresenter">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource PrimaryButtonHoverBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource PrimaryButtonForegroundBrush}" />
+    </Style>
+
+    <Style Selector="Button.primary:pressed /template/ ContentPresenter">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource PrimaryButtonPressedBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource PrimaryButtonForegroundBrush}" />
+    </Style>
+
+
+    <!-- Danger button variant -->
+
+    <Style Selector="Button.danger">
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource DangerForegroundBrush}" />
+    </Style>
+
+    <Style Selector="Button.danger:pointerover /template/ ContentPresenter">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource DangerHoverBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource DangerForegroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource DangerForegroundBrush}" />
+    </Style>
+
+
+    <!-- Square icon button -->
+
+    <Style Selector="Button.icon">
+        <Setter Property="Width" Value="38" />
+        <Setter Property="Height" Value="36" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="CornerRadius" Value="7" />
+
+        <Setter
+            Property="Background"
+            Value="{DynamicResource IconButtonBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource IconButtonForegroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource IconButtonBorderBrush}" />
+
+        <Setter Property="BorderThickness" Value="1" />
+
+        <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+
+        <Setter
+            Property="VerticalContentAlignment"
+            Value="Center" />
+    </Style>
+
+    <Style Selector="Button.icon:pointerover /template/ ContentPresenter">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource IconButtonHoverBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource IconButtonForegroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource IconButtonHoverBorderBrush}" />
+    </Style>
+
+
+    <!-- Compact text button -->
+
+    <Style Selector="Button.compact">
+        <Setter Property="MinWidth" Value="64" />
+        <Setter Property="Height" Value="36" />
+        <Setter Property="Padding" Value="12,0" />
+        <Setter Property="CornerRadius" Value="7" />
+
+        <Setter
+            Property="Background"
+            Value="{DynamicResource IconButtonBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource IconButtonForegroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource IconButtonBorderBrush}" />
+
+        <Setter Property="BorderThickness" Value="1" />
+
+        <Setter
+            Property="HorizontalContentAlignment"
+            Value="Center" />
+
+        <Setter
+            Property="VerticalContentAlignment"
+            Value="Center" />
+    </Style>
+
+    <Style Selector="Button.compact:pointerover /template/ ContentPresenter">
+        <Setter
+            Property="Background"
+            Value="{DynamicResource IconButtonHoverBackgroundBrush}" />
+
+        <Setter
+            Property="Foreground"
+            Value="{DynamicResource IconButtonForegroundBrush}" />
+
+        <Setter
+            Property="BorderBrush"
+            Value="{DynamicResource IconButtonHoverBorderBrush}" />
+    </Style>
+
+</Styles>

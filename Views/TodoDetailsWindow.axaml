@@ -1,0 +1,78 @@
+﻿<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:ToDoListApp.ViewModels"
+    x:Class="ToDoListApp.Views.TodoDetailsWindow"
+    x:DataType="vm:TodoDetailsViewModel"
+    Width="500"
+    Height="450"
+    MinWidth="400"
+    MinHeight="300"
+    WindowStartupLocation="CenterOwner"
+    Title="Task details">
+
+    <Grid
+        Margin="20"
+        RowDefinitions="*,Auto"
+        RowSpacing="16">
+
+        <StackPanel Spacing="12">
+
+            <TextBlock
+                Text="Title"
+                FontWeight="SemiBold" />
+
+            <TextBox
+                Text="{Binding Title, Mode=TwoWay}"
+                PlaceholderText="Task title" />
+
+            <TextBlock
+                Text="Description"
+                FontWeight="SemiBold" />
+
+            <TextBox
+                Text="{Binding Description, Mode=TwoWay}"
+                PlaceholderText="Task description"
+                AcceptsReturn="True"
+                TextWrapping="Wrap"
+                MinHeight="140" />
+
+            <TextBlock
+                Text="Priority"
+                FontWeight="SemiBold" />
+
+            <ComboBox
+                ItemsSource="{Binding Priorities}"
+                SelectedItem="{Binding Priority, Mode=TwoWay}" />
+
+            <TextBlock
+                Text="Creation date"
+                FontWeight="SemiBold" />
+
+            <TextBlock
+                Text="{Binding CreatedAtText}"
+                Opacity="0.7" />
+
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="1"
+            Orientation="Horizontal"
+            HorizontalAlignment="Right"
+            Spacing="10">
+
+            <Button
+                Content="Cancel"
+                Classes="compact"
+                Click="Cancel_Click" />
+
+            <Button
+                Content="Save"
+                Classes="primary"
+                Click="Save_Click" />
+
+        </StackPanel>
+
+    </Grid>
+
+</Window>

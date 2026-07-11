@@ -1,0 +1,51 @@
+﻿<Styles
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="TextBlock.title">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="FontWeight" Value="SemiBold" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource BrushTextPrimary}" />
+    </Style>
+
+    <Style Selector="TextBlock.body">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource BrushTextPrimary}" />
+    </Style>
+
+    <Style Selector="TextBlock.caption">
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource BrushTextSecondary}" />
+    </Style>
+
+    <Style Selector="TextBlock.heading">
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Foreground"
+                Value="{DynamicResource BrushTextPrimary}" />
+    </Style>
+
+    <Style Selector="TextBlock.priority-flags">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesome}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="TextAlignment" Value="Left" />
+    </Style>
+
+    <Style Selector="TextBlock.priority-flags.low">
+        <Setter Property="Foreground" Value="{DynamicResource PriorityLowBrush}" />
+    </Style>
+
+    <Style Selector="TextBlock.priority-flags.medium">
+        <Setter Property="Foreground" Value="{DynamicResource PriorityMediumBrush}" />
+    </Style>
+
+    <Style Selector="TextBlock.priority-flags.high">
+        <Setter Property="Foreground" Value="{DynamicResource PriorityHighBrush}" />
+    </Style>
+</Styles>
