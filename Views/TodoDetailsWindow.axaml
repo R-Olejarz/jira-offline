@@ -1,8 +1,8 @@
 ﻿<Window
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:vm="using:ToDoListApp.ViewModels"
-    x:Class="ToDoListApp.Views.TodoDetailsWindow"
+    xmlns:vm="using:JiraOffline.ViewModels"
+    x:Class="JiraOffline.Views.TodoDetailsWindow"
     x:DataType="vm:TodoDetailsViewModel"
     Width="500"
     Height="450"

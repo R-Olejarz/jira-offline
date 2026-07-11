@@ -6,6 +6,11 @@
         <ApplicationManifest>app.manifest</ApplicationManifest>
         <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 		<ApplicationIcon>Assets\AppIcon.ico</ApplicationIcon>
+		
+		<AssemblyName>JiraOffline</AssemblyName>
+		<RootNamespace>JiraOffline</RootNamespace>
+		<Product>Jira Offline</Product>
+		<Title>Jira Offline</Title>
     </PropertyGroup>
 
     <ItemGroup>

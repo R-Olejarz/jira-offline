@@ -1,8 +1,8 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
-using ToDoListApp.ViewModels;
+using JiraOffline.ViewModels;
 
-namespace ToDoListApp.Views;
+namespace JiraOffline.Views;
 
 public partial class TodoDetailsWindow : Window
 {

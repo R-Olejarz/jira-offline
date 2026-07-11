@@ -4,12 +4,12 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.VisualTree;
-using ToDoListApp.Models;
-using ToDoListApp.ViewModels;
+using JiraOffline.Models;
+using JiraOffline.ViewModels;
 using Avalonia.Interactivity;
-using ToDoListApp.Services;
+using JiraOffline.Services;
 
-namespace ToDoListApp.Views;
+namespace JiraOffline.Views;
 
 public partial class MainWindow : Window
 {

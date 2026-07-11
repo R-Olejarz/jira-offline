@@ -2,9 +2,9 @@ using System;
 using System.Diagnostics.CodeAnalysis;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using ToDoListApp.ViewModels;
+using JiraOffline.ViewModels;
 
-namespace ToDoListApp;
+namespace JiraOffline;
 
 /// <summary>
 /// Given a view model, returns the corresponding view if possible.

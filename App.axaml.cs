@@ -4,10 +4,10 @@ using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using System.Linq;
 using Avalonia.Markup.Xaml;
-using ToDoListApp.ViewModels;
-using ToDoListApp.Views;
+using JiraOffline.ViewModels;
+using JiraOffline.Views;
 
-namespace ToDoListApp;
+namespace JiraOffline;
 
 public partial class App : Application
 {

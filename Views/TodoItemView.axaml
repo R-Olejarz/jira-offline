@@ -1,9 +1,9 @@
 ﻿<UserControl
     xmlns="https://github.com/avaloniaui"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:models="using:ToDoListApp.Models"
-    xmlns:vm="using:ToDoListApp.ViewModels"
-    x:Class="ToDoListApp.Views.TodoItemView"
+    xmlns:models="using:JiraOffline.Models"
+    xmlns:vm="using:JiraOffline.ViewModels"
+    x:Class="JiraOffline.Views.TodoItemView"
     x:DataType="models:TodoItem">
 
     <UserControl.Styles>

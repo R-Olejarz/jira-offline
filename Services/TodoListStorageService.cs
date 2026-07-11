@@ -6,9 +6,9 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
-using ToDoListApp.Models;
+using JiraOffline.Models;
 
-namespace ToDoListApp.Services;
+namespace JiraOffline.Services;
 
 public sealed class TodoListStorageService
 {
@@ -28,7 +28,7 @@ public sealed class TodoListStorageService
     public TodoListStorageService()
     {
         var appDataDirectory = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        var applicationDirectory = Path.Combine(appDataDirectory, "ToDoListApp");
+        var applicationDirectory = Path.Combine(appDataDirectory, "JiraOffline");
 
         Directory.CreateDirectory(applicationDirectory);
         _filePath = Path.Combine(applicationDirectory, "tasks.json");

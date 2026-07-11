@@ -3,7 +3,7 @@ setlocal
 
 cd /d "%~dp0"
 
-echo Publishing ToDoListApp for Linux x64...
+echo Publishing JiraOffline for Linux x64...
 
 dotnet publish -c Release -r linux-x64 --self-contained false -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -o publish\linux-x64
 

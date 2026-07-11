@@ -1,7 +1,7 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Text.Json.Serialization;
-namespace ToDoListApp.Models;
+namespace JiraOffline.Models;
 
 public enum TodoPriority
 {

@@ -1,4 +1,4 @@
-﻿namespace ToDoListApp.Models;
+﻿namespace JiraOffline.Models;
 
 public sealed class WindowSettings
 {

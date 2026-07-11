@@ -1,7 +1,7 @@
 ﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace ToDoListApp.Views;
+namespace JiraOffline.Views;
 
 public partial class ConfirmDeleteWindow : Window
 {

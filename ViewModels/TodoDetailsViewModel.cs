@@ -1,8 +1,8 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.ComponentModel;
-using ToDoListApp.Models;
+using JiraOffline.Models;
 
-namespace ToDoListApp.ViewModels;
+namespace JiraOffline.ViewModels;
 
 public partial class TodoDetailsViewModel : ViewModelBase
 {

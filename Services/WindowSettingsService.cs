@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Text.Json;
-using ToDoListApp.Models;
+using JiraOffline.Models;
 
-namespace ToDoListApp.Services;
+namespace JiraOffline.Services;
 
 public sealed class WindowSettingsService
 {
@@ -17,7 +17,7 @@ public sealed class WindowSettingsService
     public WindowSettingsService()
     {
         var appDataDirectory = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData, Environment.SpecialFolderOption.Create);
-        var applicationDirectory = Path.Combine(appDataDirectory, "ToDoListApp");
+        var applicationDirectory = Path.Combine(appDataDirectory, "JiraOffline");
 
         Directory.CreateDirectory(applicationDirectory);
 

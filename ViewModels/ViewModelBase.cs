@@ -1,6 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace ToDoListApp.ViewModels;
+namespace JiraOffline.ViewModels;
 
 public abstract class ViewModelBase : ObservableObject
 {

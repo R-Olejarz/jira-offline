@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using System;
 
-namespace ToDoListApp;
+namespace JiraOffline;
 
 sealed class Program
 {

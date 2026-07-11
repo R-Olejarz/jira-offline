@@ -5,10 +5,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using ToDoListApp.Models;
-using ToDoListApp.Services;
+using JiraOffline.Models;
+using JiraOffline.Services;
 
-namespace ToDoListApp.ViewModels;
+namespace JiraOffline.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {

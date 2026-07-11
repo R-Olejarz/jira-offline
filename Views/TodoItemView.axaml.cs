@@ -3,10 +3,10 @@ using Avalonia.Controls;
 using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.VisualTree;
-using ToDoListApp.Models;
-using ToDoListApp.ViewModels;
+using JiraOffline.Models;
+using JiraOffline.ViewModels;
 
-namespace ToDoListApp.Views;
+namespace JiraOffline.Views;
 
 public partial class TodoItemView : UserControl
 {
