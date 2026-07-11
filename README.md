@@ -1,4 +1,3 @@
-# jira-offline
 # Jira Offline
 
 A lightweight offline task manager for developers, built with .NET 9 and Avalonia UI.
@@ -7,7 +6,7 @@ The application stores tasks locally and does not require an internet connection
 
 ## Screenshot
 
-![Jira Offline main view](docs/images/main-view.png)
+![Jira Offline main view](docs/images/main-view.png?raw=true)
 
 ## Technology Stack
 
