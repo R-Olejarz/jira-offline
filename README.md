@@ -6,7 +6,7 @@ The application stores tasks locally and does not require an internet connection
 
 ## Screenshot
 
-![Jira Offline main view](docs/images/Main-view.png?raw=true)
+![Jira Offline main view](docs/images/mainview.png?raw=true)
 
 ## Technology Stack
 
